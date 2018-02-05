@@ -31,41 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public class Nomes {
-
-        public void main(String[] args) {
-
-            ArrayList<String> Femininos = new ArrayList<String>();
-            Femininos.add("Kim");
-            Femininos.add("Millena");
-            Femininos.add("Bianca");
-            Femininos.add("Ana");
-            Femininos.add("Nicole");
-            Femininos.add("Julia");
-            Femininos.add("Alice");
-            Femininos.add("Sofia");
-            Femininos.add("Carolina");
-            Femininos.add("Sabrina");
-            Femininos.add("Manuela");
-
-            ArrayList<String> Masculinos = new ArrayList<String>();
-            Masculinos.add("Marcos");
-            Masculinos.add("Lucas");
-            Masculinos.add("Thiago");
-            Masculinos.add("Gustavo");
-            Masculinos.add("Geison");
-            Masculinos.add("Vítor");
-            Masculinos.add("Caio");
-            Masculinos.add("Vinícius");
-            Masculinos.add("Carlos");
-            Masculinos.add("Nicolas");
-            Masculinos.add("Pedro");
-
-        }
-
-
-    }
-
     public void mostra_feminino(View v) {
 
         ArrayList<String> Femininos = new ArrayList<String>();
