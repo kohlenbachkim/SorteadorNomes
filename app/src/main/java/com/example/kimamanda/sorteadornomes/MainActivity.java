@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import android.graphics.Color;
+import java.util.Collections;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.List;
@@ -47,11 +48,24 @@ public class MainActivity extends AppCompatActivity {
         Femininos.add("Manuela");
 
         int i;
+        String temp = "";
         Random r = new Random();
-        int n = Femininos.size();
         for (i = 0; i < 1; i++) {
 
-            texto.setText(Femininos.get(r.nextInt(Femininos.size())));
+            String sorteioFeminino = Femininos.get(r.nextInt(Femininos.size()));
+
+            if(temp != sorteioFeminino.contains(Femininos)){
+
+
+                
+
+                temp = sorteioFeminino;
+                texto.setText(sorteioFeminino);
+                texto.setTextColor(Color.MAGENTA);
+
+            } else{
+                i=0;
+            }
         }
     }
 
@@ -75,7 +89,10 @@ public class MainActivity extends AppCompatActivity {
         int n = Masculinos.size();
         for (i = 0; i < 1; i++) {
 
-            texto.setText(Masculinos.get(r.nextInt(Masculinos.size())));
+            String sorteioMasculino = Masculinos.get(r.nextInt(Masculinos.size()));
+
+            texto.setText(sorteioMasculino);
+            texto.setTextColor(Color.BLUE);
         }
     }
 

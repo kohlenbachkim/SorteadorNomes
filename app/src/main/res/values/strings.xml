@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SorteadorNomes</string>
+    <string name="título">Sorteador de nomes</string>
 </resources>
