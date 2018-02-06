@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
         texto = (TextView) findViewById(R.id.texto);
         feminino = (Button) findViewById(R.id.feminino);
         masculino = (Button) findViewById(R.id.masculino);
-
     }
 
     public void mostra_feminino(View v) {
+
 
         ArrayList<String> Femininos = new ArrayList<String>();
         Femininos.add("Kim");
@@ -48,24 +48,13 @@ public class MainActivity extends AppCompatActivity {
         Femininos.add("Manuela");
 
         int i;
-        String temp = "";
         Random r = new Random();
+        int n = Femininos.size();
         for (i = 0; i < 1; i++) {
 
             String sorteioFeminino = Femininos.get(r.nextInt(Femininos.size()));
 
-            if(temp != sorteioFeminino.contains(Femininos)){
-
-
-                
-
-                temp = sorteioFeminino;
-                texto.setText(sorteioFeminino);
-                texto.setTextColor(Color.MAGENTA);
-
-            } else{
-                i=0;
-            }
+            texto.setText(sorteioFeminino);
         }
     }
 
@@ -91,8 +80,9 @@ public class MainActivity extends AppCompatActivity {
 
             String sorteioMasculino = Masculinos.get(r.nextInt(Masculinos.size()));
 
+            
+
             texto.setText(sorteioMasculino);
-            texto.setTextColor(Color.BLUE);
         }
     }
 
@@ -100,4 +90,3 @@ public class MainActivity extends AppCompatActivity {
         texto.setText("");
     }
 }
-
