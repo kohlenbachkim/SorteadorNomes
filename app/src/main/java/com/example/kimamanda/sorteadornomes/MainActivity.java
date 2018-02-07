@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void mostra_feminino(View v) {
 
         ArrayList<String> Femininos = new ArrayList<String>();
@@ -51,25 +50,23 @@ public class MainActivity extends AppCompatActivity {
         Femininos.add("Manuela");
 
         Random r = new Random();
+        int i;
 
-        String sorteio = Femininos.get(r.nextInt(Femininos.size()));
+        for (i = 0; i < 1; i++) {
 
-        texto.setText(sorteio);
-        texto.setTextColor(Color.MAGENTA);
+            String sorteio = Femininos.get(r.nextInt(Femininos.size()));
 
-                    /*  String sorteio = Femininos.get(r.nextInt(Femininos.size()));
+            if (sorteio != stringAuxiliar) {
 
-                        if(stringAuxiliar==sorteio){
+                texto.setText(sorteio);
+                texto.setTextColor(Color.MAGENTA);
 
-                            sorteio = Femininos.get(r.nextInt(Femininos.size()));
-                            stringAuxiliar = sorteio;
+            } else {
 
-                        } else {
+                i = 0;
+            }
+        }
 
-                            texto.setText(sorteio);
-                        }
-
-                     } */
 
     }
 
