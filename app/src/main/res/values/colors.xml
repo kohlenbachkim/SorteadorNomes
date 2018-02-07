@@ -4,5 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="branco">#FFFFFF</color>
+    <color name="bg_limpar">#696969</color>
+    <color name="bg_feminino">#FF1493</color>
+    <color name="bg_masculino">#1E90FF</color>
+    <color name="bg_texto">#E8E8E8</color>
+
 
 </resources>

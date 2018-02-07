@@ -18,13 +18,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/título"
-                android:textAllCaps="true"
-                android:textAlignment="center"
                 android:layout_marginTop="30dp"
+                android:text="@string/título"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
                 android:textSize="25sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -38,12 +38,12 @@
                 android:id="@+id/texto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/bg_texto"
                 android:text=""
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="#000000"
-                android:textSize="40sp"
-                android:background="#E8E8E8"/>
+                android:textSize="40sp" />
 
         </LinearLayout>
 
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:layout_weight="1"
-                android:background="#FF1493"
+                android:background="@color/bg_feminino"
                 android:onClick="mostra_feminino"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="5dp"
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
                 android:layout_weight="1"
-                android:background="#1E90FF	"
+                android:background="@color/bg_masculino"
                 android:onClick="mostra_masculino"
                 android:paddingHorizontal="5dp"
                 android:paddingVertical="10dp"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
                 android:layout_marginHorizontal="120dp"
-                android:background="#696969"
+                android:background="@color/bg_limpar"
                 android:gravity="center"
                 android:onClick="limpar"
                 android:text="Limpar"
